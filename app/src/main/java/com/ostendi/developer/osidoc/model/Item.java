@@ -4,16 +4,16 @@ package com.ostendi.developer.osidoc.model;
  * Created by jitendra on 24/01/2018.
  */
 
-public class LineModel {
+public class Item {
     private String value;
     private static boolean selected;
 
-    public LineModel(String value_) {
-        value = value_;
+    public Item(String label) {
+        value = label;
     }
 
     public static void setSelected(boolean selected) {
-        LineModel.selected = selected;
+        Item.selected = selected;
     }
 
     public static boolean getSelected() {
